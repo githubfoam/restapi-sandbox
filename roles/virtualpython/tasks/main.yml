@@ -1,0 +1,32 @@
+---
+# tasks file for common
+- name: Create python2.7 virtualenv inheriting none of the globally installed modules
+  pip:
+    # name: flask==0.12.2
+    name: flask 
+    virtualenv: /home/vagrant/venv27
+    # using Python 2.7
+    virtualenv_python: python2.7
+    # inheriting globally installed modules
+    virtualenv_site_packages: no
+
+- name: Install specified python requirements in python2.7 virtualenv
+  pip:
+    # Install specified python requirements in indicated (virtualenv).
+    requirements: /vagrant/person/requirements.txt
+    virtualenv: /home/vagrant/venv27
+
+# - name: Create python3.6 virtualenv inheriting none of the globally installed modules
+#   pip:
+#     name: flask==0.12.2
+#     virtualenv: /home/vagrant/venv36
+#     # using Python 2.7
+#     virtualenv_python: python3.6
+#     # inheriting globally installed modules
+#     virtualenv_site_packages: no
+#
+# - name: Install specified python requirements in python3.6 virtualenv
+#   pip:
+#     # Install specified python requirements in indicated (virtualenv).
+#     requirements: /vagrant/person/requirements.txt
+#     virtualenv: /home/vagrant/venv36
