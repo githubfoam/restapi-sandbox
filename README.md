@@ -54,9 +54,27 @@ robo 3T  Install
 sudo tar -xzf ../robo3t-1.3.1-linux-x86_64-7419c406.tar.gz -C /opt  
 sudo ln -s /opt/robo3t-1.3.1-linux-x86_64-7419c406/bin/robo3t /usr/bin/robomongo
 
+GET
 <div align="center">
-    <img src="/screenshots/GET.JPG" width="400px"</img> 
+    <img src="/screenshots/GET.JPG" width="400px"</img>
 </div>
+POST
+<div align="center">
+    <img src="/screenshots/POST.JPG" width="400px"</img>
+</div>
+PUT
+<div align="center">
+    <img src="/screenshots/PUT.JPG" width="400px"</img>
+</div>
+LIST
+<div align="center">
+    <img src="/screenshots/LIST.JPG" width="400px"</img>
+</div>
+DELETE
+<div align="center">
+    <img src="/screenshots/DELETE.JPG" width="400px"</img> 
+</div>
+
 
 License
 -------
