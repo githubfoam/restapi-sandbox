@@ -1,11 +1,14 @@
 restapi-sandbox
 =========
 RESTFUL JSON API  
-Flask  
-mongodb  
-robo 3T  
-Postman  
-app dir -> person
+flask http://flask.pocoo.org    
+mongodb https://www.mongodb.com   
+robo 3T https://robomongo.org     
+postman  https://www.getpostman.com  
+vagrant  https://www.vagrantup.com  
+virtualbox  https://www.virtualbox.org  
+python https://www.python.org     
+
 
 ----------------
 
@@ -22,10 +25,19 @@ File:
 
 Command:
 
-Postman  
+git clone this-project  
+vagrant up control02  
+vagrant ssh control02  
+source /home/vagrant/venv27/bin/activate  
+cp -R /vagrant/person /home/vagrant/venv27/  
+cd /home/vagrant/venv27/person  
+python runapp.py  
+
+Postman  Install  
 sudo tar -xzf postman.tar.gz -C /opt
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
 
+Postman Desktop Shortcut  
 cat > ~/.local/share/applications/postman.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
@@ -37,7 +49,7 @@ Type=Application
 Categories=Development;
 EOL
 
-robo 3T  
+robo 3T  Install  
 sudo tar -xzf ../robo3t-1.3.1-linux-x86_64-7419c406.tar.gz -C /opt
 sudo ln -s /opt/robo3t-1.3.1-linux-x86_64-7419c406/bin/robo3t /usr/bin/robomongo
 
